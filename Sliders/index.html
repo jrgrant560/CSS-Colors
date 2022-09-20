@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_paletteSquares.css">
+    <link rel="stylesheet" href="style_options.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main id="pickerContainer">
+        <section class="picker RGBpicker">
+            <h2>RGB Sliders</h2>
+            <row class="rowThreeItem">
+                <!-- range: a "slider" type input that is a range from 0-255 (min, max) -->
+                <!-- step: the increment of numbers allowed; example: step of 4 in a range of 0-20 allows 0,4,8,12,16,20 -->
+                <!-- value: the default starting value; changes when the user adjust the range -->
+                <div id="paletteRgbRed" class="paletteSquare"></div>
+                <div>Red</div>
+                <input type="range" min="0" max="255" step="1" id="rgbRed" value="100">
+            </row>
+            <row class="rowThreeItem">
+                <div id="paletteRgbGreen" class="paletteSquare"></div>
+                <div>Green</div>
+                <input type="range" min="0" max="255" step="1" id="rgbGreen" value="10">
+            </row>
+            <row class="rowThreeItem">
+                <div id="paletteRgbBlue" class="paletteSquare"></div>
+                <div>Blue</div>
+                <input type="range" min="0" max="255" step="1" id="rgbBlue" value="162">
+            </row>
+            <span id="displayRGB" class="display">rgb(100, 10, 162)</span>
+        </section>
+
+        <section class="picker HSLpicker">
+            <h2>HSL Sliders</h2>
+            <row class="rowThreeItem">
+                <div id="paletteHslHue" class="paletteSquare"></div>
+                <div>Hue</div>
+                <input type="range" min="0" max="359" step="1" id="hslHue" value="120">
+            </row>
+            <row class="rowThreeItem">
+                <div id="paletteHslSaturation" class="paletteSquare"></div>
+                <div>Saturation</div>
+                <input type="range" min="0" max="100" step="1" id="hslSaturation" value="50">
+            </row>
+            <row class="rowThreeItem">
+                <div id="paletteHslLight" class="paletteSquare"></div>
+                <div>Light</div>
+                <input type="range" min="0" max="100" step="1" id="hslLight" value="50">
+            </row>
+            <span id="displayHSL" class="display">hsl(120, 50%, 50%)</span>
+        </section>
+
+        <section class="picker hexPicker">
+            <h2>Hexadecimal Sliders</h2>
+            <row class="rowThreeItem">
+                <div id="paletteHex1" class="paletteSquare">5</div>
+                <div>H1</div>
+                <input type="range" min="0" max="15" step="1" id="hex1" value="5">
+            </row>
+            <row class="rowThreeItem">
+                <div id="paletteHex2" class="paletteSquare">5</div>
+                <div>H2</div>
+                <input type="range" min="0" max="15" step="1" id="hex2" value="5">
+            </row>
+            <row class="rowThreeItem">
+                <div id="paletteHex3" class="paletteSquare">f</div>
+                <div>H3</div>
+                <input type="range" min="0" max="15" step="1" id="hex3" value="15">
+            </row>
+            <row class="rowThreeItem">
+                <div id="paletteHex4" class="paletteSquare">f</div>
+                <div>H4</div>
+                <input type="range" min="0" max="15" step="1" id="hex4" value="15">
+            </row>
+            <row class="rowThreeItem">
+                <div id="paletteHex5" class="paletteSquare">e</div>
+                <div>H5</div>
+                <input type="range" min="0" max="15" step="1" id="hex5" value="14">
+            </row>
+            <row class="rowThreeItem">
+                <div id="paletteHex6" class="paletteSquare">e</div>
+                <div>H6</div>
+                <input type="range" min="0" max="15" step="1" id="hex6" value="14">
+            </row>
+            <span id="displayHex" class="display">#55ffee</span>
+        </section>
+
+        <section class="picker cmykPicker">
+            <h2>CMYK Sliders</h2>
+            <row class="rowThreeItem">
+                <div id="paletteCmykCyan" class="paletteSquare"></div>
+                <div>Cyan</div>
+                <input type="range" min="0" max="100" step="1" id="cmykCyan" value="10">
+            </row>
+            <row class="rowThreeItem">
+                <div id="paletteCmykMagenta" class="paletteSquare"></div>
+                <div>Magenta</div>
+                <input type="range" min="0" max="100" step="1" id="cmykMagenta" value="100">
+            </row>
+            <row class="rowThreeItem">
+                <div id="paletteCmykYellow" class="paletteSquare"></div>
+                <div>Yellow</div>
+                <input type="range" min="0" max="100" step="1" id="cmykYellow" value="30">
+            </row>
+            <row class="rowThreeItem">
+                <div id="paletteCmykBlack" class="paletteSquare"></div>
+                <div>Black</div>
+                <input type="range" min="0" max="100" step="1" id="cmykBlack" value="10">
+            </row>
+            <!-- uses w3color library to convert -->
+            <span id="displayCMYK" class="display" data-w3-color="">cmyk(10%, 100%, 30%, 10%)</span>
+        </section>
+
+        <section class="picker LGPicker">
+            <span>
+                <h2>Linear Gradient Sliders</h2>
+                <row class="rowTwoItem">
+                    <div>Angle</div>
+                    <input type="range" min="0" max="359" step="1" id="LGAngle" value="90">
+                </row>
+                <hr>
+                <row class="rowTwoItem">
+                    <div>Color 1</div>
+                    <select name="LGColors" id="LGColor1">
+                        <option value="red" selected>red</option>
+                        <option value="yellow">yellow</option>
+                        <option value="green">green</option>
+                        <option value="cyan">cyan</option>
+                        <option value="blue">blue</option>
+                        <option value="magenta">magenta</option>
+                        <option value="white">white</option>
+                        <option value="black">black</option>
+                    </select>
+                </row>
+                <row class="rowTwoItem">
+                    <div>Limit 1</div>
+                    <input type="range" min="0" max="100" step="1" id="LGStop1" value="0">
+                </row>
+                <hr>
+                <row class="rowTwoItem">
+                    <div>Color 2</div>
+                    <select name="LGColors" id="LGColor2">
+                        <option value="red">red</option>
+                        <option value="yellow">yellow</option>
+                        <option value="green" selected>green</option>
+                        <option value="cyan">cyan</option>
+                        <option value="blue">blue</option>
+                        <option value="magenta">magenta</option>
+                        <option value="white">white</option>
+                        <option value="black">black</option>
+                    </select>
+                </row>
+                <row class="rowTwoItem">
+                    <div>Limit 2</div>
+                    <input type="range" min="0" max="100" step="1" id="LGStop2" value="50">
+                </row>
+                <hr>
+                <row class="rowTwoItem">
+                    <div>Color 3</div>
+                    <select name="LGColors" id="LGColor3">
+                        <option value="red">red</option>
+                        <option value="yellow">yellow</option>
+                        <option value="green">green</option>
+                        <option value="cyan">cyan</option>
+                        <option value="blue" selected>blue</option>
+                        <option value="magenta">magenta</option>
+                        <option value="white">white</option>
+                        <option value="black">black</option>
+                    </select>
+                </row>
+                <row class="rowTwoItem">
+                    <div>Limit 3</div>
+                    <input type="range" min="0" max="100" step="1" id="LGStop3" value="100">
+                </row>
+            </span>
+            <span></span>
+            <span id="displayLinearGradient" class="display">
+                <article id="displayLinearGradientText">linear-gradient(90deg, red 0%, green 50%, blue 100%)</article>
+            </span>
+        </section>
+
+        <section class="picker RGPicker">
+            <span>
+                <h2>Radial Gradient Sliders</h2>
+                <row class="rowTwoItem">
+                    <div>Color 1</div>
+                    <select name="RGColors" id="RGColor1">
+                        <option value="red" selected>red</option>
+                        <option value="yellow">yellow</option>
+                        <option value="green">green</option>
+                        <option value="cyan">cyan</option>
+                        <option value="blue">blue</option>
+                        <option value="magenta">magenta</option>
+                        <option value="white">white</option>
+                        <option value="black">black</option>
+                    </select>
+                </row>
+                <row class="rowTwoItem">
+                    <div>Limit 1</div>
+                    <input type="range" min="0" max="100" step="1" id="RGStop1" value="0">
+                </row>
+                <hr>
+                <row class="rowTwoItem">
+                    <div>Color 2</div>
+                    <select name="RGColors" id="RGColor2">
+                        <option value="red">red</option>
+                        <option value="yellow">yellow</option>
+                        <option value="green" selected>green</option>
+                        <option value="cyan">cyan</option>
+                        <option value="blue">blue</option>
+                        <option value="magenta">magenta</option>
+                        <option value="white">white</option>
+                        <option value="black">black</option>
+                    </select>
+                </row>
+                <row class="rowTwoItem">
+                    <div>Limit 2</div>
+                    <input type="range" min="0" max="100" step="1" id="RGStop2" value="50">
+                </row>
+                <hr>
+                <row class="rowTwoItem">
+                    <div>Color 3</div>
+                    <select name="RGColors" id="RGColor3">
+                        <option value="red">red</option>
+                        <option value="yellow">yellow</option>
+                        <option value="green">green</option>
+                        <option value="cyan">cyan</option>
+                        <option value="blue" selected>blue</option>
+                        <option value="magenta">magenta</option>
+                        <option value="white">white</option>
+                        <option value="black">black</option>
+                    </select>
+                </row>
+                <row class="rowTwoItem">
+                    <div>Limit 3</div>
+                    <input type="range" min="0" max="100" step="1" id="RGStop3" value="100">
+                </row>
+                <hr>
+                <row class="rowTwoItem rowShine">
+                    <div>Shine (Horizontal)</div>
+                    <input type="range" min="0" max="100" step="1" id="RGShineX" value="25">
+                </row>
+                <row class="rowTwoItem rowShine">
+                    <div>Shine (Vertical)</div>
+                    <input type="range" min="0" max="100" step="1" id="RGShineY" value="25">
+                </row>
+            </span>
+            <span></span>
+            <span id="displayRadialGradient" class="display">
+                <article id="displayRadialGradientText">radial-gradient(ellipse at 25% 25%, red 0%, green 50%, blue 100%)</article>
+            </span>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <!-- w3color.js library -->
+    <script src="..\CMYK_Converter\w3color.js"></script>
+</body>
+
+</html>

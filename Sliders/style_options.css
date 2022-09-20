@@ -1,0 +1,64 @@
+#LGColor1 {
+    color: red;
+}
+
+#LGColor2 {
+    color: green;
+}
+
+#LGColor3 {
+    color: blue;
+}
+
+#RGColor1 {
+    color: red;
+}
+
+#RGColor2 {
+    color: green;
+}
+
+#RGColor3 {
+    color: blue;
+}
+
+option {
+    font-weight: bold;
+}
+
+option[value="red"] {
+    color: red;
+}
+
+option[value="yellow"] {
+    color: rgb(234, 234, 0);
+}
+
+option[value="green"] {
+    color: green;
+}
+
+option[value="cyan"] {
+    color: cyan;
+}
+
+option[value="blue"] {
+    color: blue;
+}
+
+option[value="magenta"] {
+    color: magenta;
+}
+
+option[value="white"] {
+    color: white;
+    background-color: black;
+}
+
+option[value="black"] {
+    color: black;
+}
+/* 
+select[style="color: white"] {
+    text-shadow: black 1px 1px 1px;
+} */

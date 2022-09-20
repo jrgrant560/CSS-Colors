@@ -1,0 +1,149 @@
+h1, h3 {
+    text-align: center;
+}
+
+section {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container {
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 0;
+}
+
+.marker {
+    width: 250px;
+    height: 50px;
+    margin: 10px auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px black solid;
+    color: black;
+    font-weight: bold;
+    -webkit-text-stroke: 0.15px white;
+    font-size: 1.5em;
+}
+
+.markerB {
+    height: 100px;
+}
+
+/* .A0 {
+    background-color: rgb(255, 0, 0);
+}
+
+.A1 {
+    background-color: rgb(0, 255, 0);
+}
+
+.A2 {
+    background-color: rgb(0, 0, 255);
+}
+
+.A3 {
+    background-color: #FFFF00;
+}
+
+.A4 {
+    background-color: #FF00FF;
+}
+
+.A5 {
+    background-color: #00FFFF;
+}
+
+.A6 {
+    background-color: hsl(90, 100%, 50%);
+}
+
+.A7 {
+    background-color: hsl(150, 100%, 50%);
+}
+
+.A8 {
+    background-color: hsl(270, 100%, 50%);
+}
+
+.A9 {
+    background-color: hsl(0, 50%, 50%);
+}
+
+.A10 {
+    background-color: hsl(120, 50%, 50%);
+}
+
+.A11 {
+    background-color: hsl(240, 50%, 50%);
+}
+
+.A12 {
+    background-color: hsl(0, 0%, 0%);
+}
+
+.A13 {
+    background-color: hsl(0, 0%, 25%);
+}
+
+.A14 {
+    background-color: hsl(0, 0%, 50%);
+}
+
+.A15 {
+    background-color: hsl(0, 0%, 75%);
+}
+
+.A16 {
+    background-color: hsl(0, 0%, 100%);
+} */
+
+
+
+/* .B0 {
+    background: linear-gradient(90deg, rgb(255, 0, 0), rgb(0, 255, 0), rgb(0, 0, 255));
+}
+
+.B1 {
+    background-color: hsl(240, 100%, 50%);
+}
+
+.B2 {
+    background-color: hsl(240, 100%, 50%);
+}
+
+.B3 {
+    background-color: hsl(240, 100%, 50%);
+}
+
+.B4 {
+    background-color: hsl(240, 100%, 50%);
+}
+
+.B5 {
+    background-color: hsl(240, 100%, 50%);
+}
+
+.B6 {
+    background-color: hsl(240, 100%, 50%);
+}
+
+.B7 {
+    background-color: hsl(240, 100%, 50%);
+}
+
+.B8 {
+    background-color: hsl(240, 100%, 50%);
+} */
+
+input {
+    margin: .4rem;
+}
+
+.D0 {
+    height: 250px;
+    background: radial-gradient(rgb(255, 0, 0), rgb(0, 255, 0), rgb(0, 0, 255));
+}

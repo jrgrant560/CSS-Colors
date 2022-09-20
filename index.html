@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colored Markers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>CSS Color Markers</h1>
+    <!-- <h3>Hover over to see color values!</h3> -->
+    <section>
+        <span class="container">
+            <div class="marker markerA A0">rgb(255, 0, 0)</div>
+            <div class="marker markerA A1">rgb(0, 255, 0)</div>
+            <div class="marker markerA A2">rgb(0, 0, 255)</div>
+            <div class="marker markerA A3">#FFFF00</div>
+            <div class="marker markerA A4">#FF00FF</div>
+            <div class="marker markerA A5">#00FFFF</div>
+            <div class="marker markerA A6">hsl(90, 100%, 50%)</div>
+            <div class="marker markerA A7">hsl(150, 100%, 50%)</div>
+            <div class="marker markerA A8">hsl(270, 100%, 50%)</div>
+            <div class="marker markerA A9">hsl(0, 50%, 50%)</div>
+            <div class="marker markerA A10">hsl(120, 50%, 50%)</div>
+            <div class="marker markerA A11">hsl(240, 50%, 50%)</div>
+            <div class="marker markerA A12">hsl(0, 0%, 0%)</div>
+            <div class="marker markerA A13">hsl(0, 0%, 25%)</div>
+            <div class="marker markerA A14">hsl(0, 0%, 50%)</div>
+            <div class="marker markerA A15">hsl(0, 0%, 75%)</div>
+            <div class="marker markerA A16">hsl(0, 0%, 100%)</div>
+        </span>
+        <span class="container">
+            <div class="marker markerB B0">linear-gradient(90deg, white, black)</div>
+            <div class="marker markerB B1">linear-gradient(180deg, white, black)</div>
+            <div class="marker markerB B2">linear-gradient(90deg, red, cyan)</div>
+            <div class="marker markerB B3">linear-gradient(90deg, red 75%, cyan)</div>
+            <div class="marker markerB B4">linear-gradient(90deg, red 10%, cyan 90%)</div>
+            <div class="marker markerB B5">linear-gradient(90deg, red 25%, cyan 75%)</div>
+            <div class="marker markerB B6">linear-gradient(90deg, red, green, blue)</div>
+            <div class="marker markerB B7">linear-gradient(90deg, red, green, blue, yellow, magenta, cyan)</div>
+            <div class="marker markerB B8">linear-gradient(90deg, red, black)</div>
+            <div class="marker markerB B9">linear-gradient(90deg, white, red)</div>
+            <div class="marker markerB B10"></div>
+            <div class="marker markerB B11"></div>
+        </span>
+    </section>
+
+    <h2>Cat Form</h2>
+    <form action="alert('Yay!'')">
+        <fieldset>
+            <legend>Is your cat an indoor or outdoor cat?</legend>
+            <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
+            <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+        </fieldset>
+        <fieldset>
+            <legend>What's your cat's personality?</legend>
+            <input id="loving" type="checkbox" name="personality" value="loving" checked>
+            <label for="loving">Loving</label>
+            <input id="lazy" type="checkbox" name="personality" value="lazy">
+            <label for="lazy">Lazy</label>
+            <input id="energetic" type="checkbox" name="personality" value="energetic">
+            <label for="energetic">Energetic</label>
+        </fieldset>
+        <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <hr>
+
+    <p>Choose your monster's colors:</p>
+
+    <div>
+        <input type="color" id="C0Pick" name="C0Pick" value="#e66465">
+        <label for="head">- C0 -</label>
+        <button onclick="applyBGButton('C0Pick','C0')">Apply Color</button>
+    </div>
+
+    <div class="marker markerC C0"></div>
+
+    <div class="marker markerD D0"></div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

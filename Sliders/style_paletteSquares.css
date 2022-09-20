@@ -1,0 +1,67 @@
+.paletteSquare {
+    width: 1em;
+    height: 1em;
+    border: 1px solid #000;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* RGB */
+#paletteRgbRed {
+    background-color: red;
+}
+
+#paletteRgbGreen {
+    background-color: green;
+}
+
+#paletteRgbBlue {
+    background-color: blue;
+}
+
+
+/* HSL */
+#paletteHslHue {
+    background-color: hsl(120, 100%, 50%);
+}
+
+#paletteHslSaturation {
+    background-image: linear-gradient(90deg, hsl(120, 0%, 50%), hsl(120, 100%, 50%));
+}
+
+#paletteHslLight {
+    background-image: linear-gradient(90deg, hsl(120, 50%, 0%), hsl(120, 50%, 100%));
+}
+
+
+/* HEXADECIMAL */
+#paletteHex1, #paletteHex2 {
+    background-color: #550000;
+}
+
+#paletteHex3, #paletteHex4 {
+    background-color: #00ff00;
+}
+
+#paletteHex5, #paletteHex6 {
+    background-color: #0000ee;
+}
+
+/* CMYK */
+#paletteCmykCyan {
+    background-color: cyan;
+}
+
+#paletteCmykMagenta {
+    background-color: magenta;
+}
+
+#paletteCmykYellow {
+    background-color: yellow;
+}
+
+#paletteCmykBlack {
+    background-color: black;
+}
